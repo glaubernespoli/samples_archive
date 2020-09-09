@@ -1,0 +1,32 @@
+{
+    "name": "samples_archive",
+    "version": "1.0.0",
+    "description": "A repository that is to be a library of samples of cool things and tricks that can be done.",
+    "main": "src/index.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon --ignore docs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/glaubernespoli/samples_archive.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/glaubernespoli/samples_archive/issues"
+    },
+    "homepage": "https://github.com/glaubernespoli/samples_archive#readme",
+    "dependencies": {
+        "connect-livereload": "^0.6.1",
+        "express": "^4.17.1",
+        "livereload": "^0.9.1",
+        "path": "^0.12.7"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
+}
