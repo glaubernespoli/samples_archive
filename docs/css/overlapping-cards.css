@@ -2,15 +2,12 @@
     --bg-color: rgb(68, 110, 145);
 }
 
-/* * {
-    font-size: .9rem;
-} */
-
 html,
 body {
     height: 100%;
     background-color: var(--bg-color);
     overflow: hidden;
+    margin: 0;
 }
 
 body>div:first-of-type {
@@ -31,6 +28,7 @@ div.selector {
         'happy-card lovers-card'
         'pick       pick';
     align-items: center;
+
 }
 
 label {
@@ -42,8 +40,8 @@ label {
 label.happy-card,
 label.lovers-card {
     background-color: #ddd;
-    width: 16rem;
-    height: 16rem;
+    width: 13rem;
+    height: 13rem;
     color: #444;
 
     display: flex;
@@ -57,22 +55,16 @@ label.lovers-card {
     animation-fill-mode: forwards;
 }
 
-label.happy-card {
-    right: -15px;
-}
-
-label.lovers-card {
-    left: -15px;
-}
-
 label ul {
-    margin: 0 0 0 1rem;
-    line-height: 1.3;
+    margin: 0;
+    line-height: 1.1;
     list-style: square;
+    font-size: 0.9rem;
 }
 
 label h1 {
-    margin-left: 1.3rem;
+    margin-left: 1rem;
+    font-size: 1.3rem;
     margin-bottom: 0;
 }
 
@@ -168,5 +160,20 @@ label.lovers-pick {
 @media only screen and (min-width: 900px) {
     body {
         font-size: 1rem;
+    }
+
+    label.happy-card,
+    label.lovers-card {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    label h1 {
+        margin-left: 1.3rem;
+        font-size: 2rem;
+    }
+
+    label ul {
+        line-height: 1.3;
     }
 }
